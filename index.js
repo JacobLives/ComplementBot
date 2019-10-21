@@ -53,7 +53,6 @@ client.on("message", async message => {
         message.channel.send("That is not a valid name.");
         return;
       }
-
     }
     let random = Math.floor((Math.random() * complements.length));
     console.log(random);
