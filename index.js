@@ -40,7 +40,7 @@ client.on("message", async message => {
       newMessage = message.author.username + ". ";
     else {
 
-      const list = client.guilds.get("584539180873547777");
+      const list = message.channel.guild;
 
       list.members.forEach(member => {
         if (args[0] === member.user.username) {
